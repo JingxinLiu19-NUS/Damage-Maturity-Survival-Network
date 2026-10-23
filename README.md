@@ -12,9 +12,7 @@ School of Computer Science and Engineering, Chongqing University of Science and 
 
 Accurate state-of-health (SOH) estimation is essential for reliable battery management, yet existing data-driven sequence models often achieve strong fitting performance without respecting the physical characteristics of battery degradation. Two issues remain insufficiently addressed: measured capacity is non-monotonic due to reversible recovery, and damage generated in a historical cycle may only manifest much later. Enforcing monotonicity suppresses recovery information, while assigning damage to the generation cycle ignores delayed manifestation.
 
-This repository provides the implementation of the **Damage-Maturity Survival Network (DMSN)**, a process-interpretable framework for battery SOH estimation. DMSN represents each historical operating cycle as a damage event characterized by a nonnegative amplitude, a maturity delay, and a maturity width. A causal maturity operator aggregates matured event contributions into accumulated irreversible damage, which is mapped to a nonincreasing irreversible health state through a survival transformation. A separate age-gated recovery branch captures local reversible capacity variation without violating the monotonicity of the irreversible degradation trajectory.
-
-The code and standardized XJTU data in this repository support reproduction of the main experiments, ablation studies, and process-level validation reported in the paper.
+This repository provides the implementation of the **Damage-Maturity Survival Network (DMSN)**, a process-interpretable framework for battery SOH estimation. 
 
 ---
 
