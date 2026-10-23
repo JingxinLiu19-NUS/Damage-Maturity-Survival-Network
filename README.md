@@ -47,16 +47,6 @@ The `preprocessing/` directory contains scripts for:
 
 The `models/` directory contains the DMSN implementation:
 
-- `stress_encoder.py`: causal descriptors (current value, first-order difference, short- and long-term deviations) and ResMLP fusion.
-- `effective_age.py`: condition-dependent aging rate and effective degradation age.
-- `damage_events.py`: nonnegative amplitude, maturity delay, and maturity width heads.
-- `maturity_operator.py`: causal maturity kernel and accumulated damage.
-- `survival_transform.py`: irreversible health state via survival mapping.
-- `recovery_branch.py`: depthwise convolution, positive/fluctuation heads, and age-gated recovery.
-- `dmsn.py`: full forward pass and prediction head.
-- `train.py`: three-stage training strategy and checkpoint selection.
-- `evaluate.py`: MAE, RMSE, MAPE, and R² evaluation.
-
 ---
 
 ## 4. Results and Conclusion
